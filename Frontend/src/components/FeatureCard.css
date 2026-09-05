@@ -1,0 +1,37 @@
+.featureCard {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.featureLabel {
+  margin-bottom: 18px;
+
+  color: var(--accent-light);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.featureTitle {
+  margin-bottom: 12px;
+
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.featureBody {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
