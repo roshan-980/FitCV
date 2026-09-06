@@ -1,0 +1,220 @@
+.resume-preview {
+  height: calc(100% - 69px);
+  padding: 28px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+
+.resume-paper {
+  width: 100%;
+  max-width: 760px;
+  min-height: 1000px;
+  background: #FFFFFF;
+  color: #172033;
+  padding: 48px 52px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.resume-header {
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #172033;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  color: #111827;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.resume-title {
+  margin-top: 4px;
+  color: #4B5563;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.resume-contact,
+.resume-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px 13px;
+  margin-top: 9px;
+  color: #4B5563;
+  font-size: 10px;
+}
+
+.resume-contact span:not(:last-child)::after,
+.resume-links span:not(:last-child)::after {
+  content: "•";
+  margin-left: 13px;
+  color: #9CA3AF;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.resume-section {
+  margin-top: 21px;
+}
+
+.resume-section h2 {
+  margin: 0 0 9px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #D1D5DB;
+  color: #111827;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.resume-section > p {
+  margin: 0;
+  color: #374151;
+  font-size: 10.5px;
+  line-height: 1.6;
+}
+
+/* =========================
+   ENTRIES
+========================= */
+
+.resume-entry {
+  margin-bottom: 15px;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.resume-entry h3 {
+  margin: 0 0 2px;
+  color: #111827;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.resume-entry strong {
+  color: #374151;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.resume-entry p {
+  margin: 5px 0 0;
+  color: #374151;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.resume-date {
+  flex-shrink: 0;
+  color: #6B7280;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.resume-muted {
+  margin-top: 3px;
+  color: #6B7280;
+  font-size: 9px;
+}
+
+.resume-tech {
+  margin-top: 6px;
+  color: #4B5563;
+  font-size: 9px;
+  font-style: italic;
+}
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
+.project-links {
+  display: flex;
+  gap: 8px;
+  color: #4F46E5;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.resume-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 7px;
+}
+
+.resume-skill {
+  color: #374151;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+}
+
+/* =========================
+   EMPTY RESUME
+========================= */
+
+.resume-paper:empty::before {
+  content: "Start filling your resume...";
+  color: #9CA3AF;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .resume-preview {
+    padding: 16px;
+  }
+
+  .resume-paper {
+    padding: 30px 25px;
+    min-height: 850px;
+  }
+
+  .resume-header h1 {
+    font-size: 25px;
+  }
+
+  .resume-entry-top {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .resume-date {
+    order: -1;
+  }
+}
