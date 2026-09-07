@@ -1,0 +1,566 @@
+/* =========================================
+   ATS PAGE
+========================================= */
+
+.ats-page {
+    min-height: 100vh;
+    background: #0A0F1E;
+    color: #F0EEE9;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.ats-container {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 70px 0 100px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.ats-header {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.ats-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 6px 12px;
+
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 999px;
+
+    background: rgba(99, 102, 241, 0.10);
+
+    color: #818CF8;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.ats-header h1 {
+    margin: 18px 0 14px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(34px, 5vw, 48px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.ats-header p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #94A3B8;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   INPUT SECTION
+========================================= */
+
+.ats-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* =========================================
+   ATS CARD
+========================================= */
+
+.ats-card {
+    padding: 26px;
+
+    background: #111827;
+
+    border: 1px solid #1E2D45;
+    border-radius: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ats-card:focus-within {
+    border-color: rgba(99, 102, 241, 0.55);
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.07);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.ats-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.ats-card-header h2 {
+    margin: 0;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ats-card-header span {
+    color: #64748B;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESUME UPLOAD AREA
+========================================= */
+
+.resume-upload {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 220px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #0A0F1E;
+
+    border: 1px dashed #334155;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.resume-upload:hover {
+    border-color: #6366F1;
+
+    background: rgba(99, 102, 241, 0.035);
+
+    box-shadow:
+        0 0 25px rgba(99, 102, 241, 0.04);
+}
+
+
+/* =========================================
+   HIDDEN FILE INPUT
+========================================= */
+
+.resume-upload input[type="file"] {
+    display: none;
+}
+
+
+/* =========================================
+   UPLOAD CONTENT
+========================================= */
+
+.upload-content {
+    position: relative;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   UPLOAD ICON
+========================================= */
+
+.upload-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 16px;
+
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 12px;
+
+    background: rgba(99, 102, 241, 0.12);
+
+    color: #818CF8;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   UPLOAD TITLE
+========================================= */
+
+.upload-content h3 {
+    margin: 0 0 7px;
+
+    overflow: hidden;
+
+    color: #F0EEE9;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   UPLOAD DESCRIPTION
+========================================= */
+
+.upload-content p {
+    margin: 0;
+
+    color: #64748B;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FILE REPLACE HINT
+========================================= */
+
+.upload-hint {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #4B5563;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   REMOVE RESUME BUTTON
+========================================= */
+
+.remove-resume {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #334155;
+    border-radius: 50%;
+
+    background: #111827;
+
+    color: #94A3B8;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.remove-resume:hover {
+    background: rgba(239, 68, 68, 0.12);
+
+    border-color: #EF4444;
+
+    color: #EF4444;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   JOB DESCRIPTION
+========================================= */
+
+.job-description {
+    width: 100%;
+    min-height: 260px;
+
+    box-sizing: border-box;
+
+    padding: 16px;
+
+    resize: vertical;
+
+    background: #0A0F1E;
+
+    border: 1px solid #1E2D45;
+    border-radius: 9px;
+
+    outline: none;
+
+    color: #F0EEE9;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.job-description::placeholder {
+    color: #4B5563;
+}
+
+.job-description:focus {
+    border-color: #6366F1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+
+/* =========================================
+   CHARACTER COUNT
+========================================= */
+
+.character-count {
+    margin-top: 9px;
+
+    text-align: right;
+
+    color: #4B5563;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.ats-action {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   CHECK ATS BUTTON
+========================================= */
+
+.check-ats-btn {
+    min-width: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 13px 22px;
+
+    border: 1px solid #6366F1;
+    border-radius: 8px;
+
+    background: #6366F1;
+
+    color: #FFFFFF;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.check-ats-btn span {
+    font-size: 18px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.check-ats-btn:hover {
+    background: #5558E8;
+
+    box-shadow:
+        0 8px 25px rgba(99, 102, 241, 0.22);
+
+    transform: translateY(-1px);
+}
+
+.check-ats-btn:hover span {
+    transform: translateX(3px);
+}
+
+.check-ats-btn:active {
+    transform: translateY(0);
+}
+
+.check-ats-btn:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .ats-container {
+        width: calc(100% - 24px);
+
+        padding: 45px 0 70px;
+    }
+
+    .ats-header {
+        margin-bottom: 35px;
+    }
+
+    .ats-header h1 {
+        font-size: 34px;
+    }
+
+    .ats-header p {
+        font-size: 14px;
+    }
+
+    .ats-card {
+        padding: 20px;
+    }
+
+    .ats-card-header {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .ats-card-header span {
+        text-align: right;
+    }
+
+    .resume-upload {
+        min-height: 190px;
+
+        padding: 20px;
+    }
+
+    .job-description {
+        min-height: 220px;
+    }
+
+    .check-ats-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .ats-container {
+        width: calc(100% - 20px);
+
+        padding-top: 35px;
+    }
+
+    .ats-header h1 {
+        font-size: 30px;
+    }
+
+    .ats-header p {
+        font-size: 13px;
+    }
+
+    .ats-card {
+        padding: 16px;
+    }
+
+    .ats-card-header h2 {
+        font-size: 15px;
+    }
+
+    .ats-card-header span {
+        font-size: 10px;
+    }
+
+    .resume-upload {
+        min-height: 180px;
+    }
+
+    .upload-content h3 {
+        max-width: 85%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
