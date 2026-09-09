@@ -160,8 +160,7 @@ router.post("/", upload.single("resume"), async (req, res) => {
         return res.status(200).json({
             success: true,
             message: "Resume processed successfully",
-            resumeText: resumeText,
-            jobDescription: jobDescription
+            desc  : atsResult.output
         });
 
     } catch (error) {

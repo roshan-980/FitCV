@@ -8,7 +8,7 @@ const PORT = 5000;
 app.use(cors());
 app.use("/api/ats_score", mainRouter);
 app.get("/", (req, res) => {
-    res.json({ message: "Server is running 🚀" });
+    res.json({ message: "Server is running " });
 });
 
 
